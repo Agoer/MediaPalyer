@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wph-Nw-Vyj">
+                                <rect key="frame" x="10" y="373" width="46" height="30"/>
+                                <state key="normal" title="摄像头"/>
+                                <connections>
+                                    <action selector="devicePositionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vg1-BZ-7oC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-Jm-Xqx">
+                                <rect key="frame" x="10" y="433" width="62" height="30"/>
+                                <state key="normal" title="焦距调整"/>
+                                <connections>
+                                    <action selector="focusModeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taP-R1-r7t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oez-Kw-hwe">
+                                <rect key="frame" x="10" y="493" width="77" height="30"/>
+                                <state key="normal" title="曝光量调节"/>
+                                <connections>
+                                    <action selector="exposureModeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VY6-Tx-MHN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cum-go-ZIS">
+                                <rect key="frame" x="10" y="553" width="46" height="30"/>
+                                <state key="normal" title="白平衡"/>
+                                <connections>
+                                    <action selector="whiteBalanceModeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a3W-8g-yct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGa-Kh-gci">
+                                <rect key="frame" x="10" y="313" width="108" height="30"/>
+                                <state key="normal" title="闪光灯、手电筒"/>
+                                <connections>
+                                    <action selector="flashModeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cT-KC-KWJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQq-Lj-5Zf">
+                                <rect key="frame" x="10" y="253" width="62" height="30"/>
+                                <state key="normal" title="距离调整"/>
+                                <connections>
+                                    <action selector="autoFocusRangeRestrictionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQF-dv-3eF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OGa-Kh-gci" firstAttribute="top" secondItem="bQq-Lj-5Zf" secondAttribute="bottom" constant="30" id="70P-tV-ft3"/>
+                            <constraint firstItem="hxq-Jm-Xqx" firstAttribute="top" secondItem="Wph-Nw-Vyj" secondAttribute="bottom" constant="30" id="F32-5B-WPz"/>
+                            <constraint firstItem="Wph-Nw-Vyj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="Nfy-mh-HYZ"/>
+                            <constraint firstItem="Wph-Nw-Vyj" firstAttribute="leading" secondItem="OGa-Kh-gci" secondAttribute="leading" id="Qhc-95-Mit"/>
+                            <constraint firstItem="hxq-Jm-Xqx" firstAttribute="leading" secondItem="bQq-Lj-5Zf" secondAttribute="leading" id="Rhz-CK-gLE"/>
+                            <constraint firstItem="Wph-Nw-Vyj" firstAttribute="top" secondItem="OGa-Kh-gci" secondAttribute="bottom" constant="30" id="SfB-Tu-5do"/>
+                            <constraint firstItem="Cum-go-ZIS" firstAttribute="leading" secondItem="bQq-Lj-5Zf" secondAttribute="leading" id="TcL-Y4-8dl"/>
+                            <constraint firstItem="Wph-Nw-Vyj" firstAttribute="leading" secondItem="bQq-Lj-5Zf" secondAttribute="leading" id="Tdu-KM-Rzf"/>
+                            <constraint firstItem="oez-Kw-hwe" firstAttribute="top" secondItem="hxq-Jm-Xqx" secondAttribute="bottom" constant="30" id="XXq-Oh-9gD"/>
+                            <constraint firstItem="oez-Kw-hwe" firstAttribute="leading" secondItem="bQq-Lj-5Zf" secondAttribute="leading" id="hdj-GK-TbW"/>
+                            <constraint firstItem="Cum-go-ZIS" firstAttribute="top" secondItem="oez-Kw-hwe" secondAttribute="bottom" constant="30" id="mPc-T0-nXZ"/>
+                            <constraint firstItem="Wph-Nw-Vyj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wla-am-i79"/>
+                            <constraint firstItem="OGa-Kh-gci" firstAttribute="leading" secondItem="bQq-Lj-5Zf" secondAttribute="leading" id="xRZ-HS-l8q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
